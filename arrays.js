@@ -254,4 +254,5 @@ l2=arr2.length
 for(let i=l1;i<l2+l1;i++){ 
     arr1[i]=arr2[i-l1]
 }
-console.log()
+console.log();
+//fghg
