@@ -187,24 +187,30 @@
 
 //1.count th frequency of each items in the array
 
-// let arr = [1,1,1,2,2,2];
-// let arr2=arr;
-// //console.log(arr)
-// for(let i=0;i<arr.length;i++){
+// let arr = [1,1,1,2,2,2]; //i
+// let arr2= [1,1,1,2,2,2] //j
+// let n = arr.length
+// for(let i=0;i<n;i++){
 //     let count=0;
-//     for(let j=0;j<arr.length;j++){
-//         //console.log(arr[i])
+//     for(let j=0;j<n;j++){
 //         if(arr2[j]!=-1){
-//             console.log(arr[i])
-//             if(arr[i]==arr2[j]){
+//             if(arr2[j]==arr[i]){
 //                 count++;
 //                 arr2[j]=-1;
 //             }
 //         }
 //     }
-//     //console.log(arr[i],'->',count,'times');
+//     console.log(arr[i],'->',count,'times');
+// }    
+// console.log(arr)
+
+// let arr=[1,2,3];
+// let arr2=arr;
+// for(let i=0;i<arr.length;i++){
+//     arr2[i]=-1;
 // }
-// //console.log(arr)
+// console.log(arr)
+// console.log(arr2)
 
 // let arr = [1,1,1,2,2,2];
 // n=arr.length;
@@ -244,15 +250,27 @@
 //     console.log("false")
 // }
 
-//merging 2 arrays
+// //merging 2 arrays
 
-let arr1=[1,2,3,4]
-let arr2=[5,6,7,8]
-l1=arr1.length
-l2=arr2.length
+// let arr1=[1,2,3,4]
+// let arr2=[5,6,7,8]
+// l1=arr1.length
+// l2=arr2.length
 
-for(let i=l1;i<l2+l1;i++){ 
-    arr1[i]=arr2[i-l1]
+// for(let i=l1;i<l2+l1;i++){ 
+//     arr1[i]=arr2[i-l1]
+// }
+// console.log();
+
+//2. find the second largest number without sorting
+let arr=[1,2,3,4,5]
+let n=arr.length
+let largest=[];
+for(let i=0;i<n;i++){
+    for(let j=0;j<n;j++){
+        if(largest[j]==arr[i]){
+            largest[j]=arr[i];
+        }
+    }
 }
-console.log();
-//fghg
+console.log(largest)
