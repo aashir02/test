@@ -263,14 +263,3 @@
 // console.log();
 
 //2. find the second largest number without sorting
-let arr=[1,2,3,4,5]
-let n=arr.length
-let largest=[];
-for(let i=0;i<n;i++){
-    for(let j=0;j<n;j++){
-        if(largest[j]==arr[i]){
-            largest[j]=arr[i];
-        }
-    }
-}
-console.log(largest)
